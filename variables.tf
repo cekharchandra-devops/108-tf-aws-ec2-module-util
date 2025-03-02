@@ -14,3 +14,17 @@ variable "tags" {
   }
   
 }
+
+variable "common_tags" {
+  default = {
+    Terraform = "true"
+    project = "ec2-module"
+  }
+
+}
+
+variable "sg_ids" {
+  type = list(string)
+  default = ["sg-0158e0bf4b6d8891e"]
+  
+}
